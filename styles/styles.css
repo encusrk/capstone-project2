@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 21px;
+    background: rgb(225,219,219);
+    background: linear-gradient(184deg, rgba(225,219,219,1) 47%, rgb(137, 137, 144) 100%);  
+}
+
+.image {
+    height: 25rem;
+    width: 25rem;
+}
+
+#hero {
+    background-image: url(../images/codingpc.jpg);
+    height: 75%;
+    width: 100%;
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+.title-text {
+    font-family: "Mea Culpa", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile.image {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+
+.heading {
+    font-size: 5.625em; 
+} 
+
+.subheading {
+    font-family: "Nunito";
+}
+
+.welcome.text {
+    /* max-width: 60%; */
+    width: 60%;
+}
+
+#skills {
+    margin: 5rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+}
+
+.skills > .skills {
+    display: block;
+}
+
+.skills > img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2.25rem;
+}
+
+.skills > h3,p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 80%;
+}
+
+footer {
+    background-color: rgb(137, 137, 144, 0.75);
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.85rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .subheading {
+        color: antiquewhite;
+    }
+
+    .profile.image {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    
+    .welcome.text {
+        width: 80%;
+        padding: 0.5rem;
+        text-align: start;
+    }
+
+    #skills {
+        margin: 1rem;
+    }
+   
+    .skills > img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 2.25rem;
+    }
+
+    .skills > p {
+        font-family: "Nunito", sans-serif;
+        text-align: start;
+        padding-left: 1.5rem;
+    }
+
+    .skills > h3 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    footer {
+        height: 5rem;
+        align-items: center;
+    }
+}
